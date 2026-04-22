@@ -1,7 +1,5 @@
 import streamlit as st
 import google.generativeai as genai
-
-# Secrets에서 키 가져오기
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel('gemini-pro')
 
